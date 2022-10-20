@@ -1,5 +1,5 @@
 def add(x,y){
-  sum = x+y
+  sum = '3'
   echo "sum = ${sum}"
 }
 
