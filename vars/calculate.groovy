@@ -1,8 +1,9 @@
 def add(x,y){
   def sum = x+y
-  echo 'sum = ${sum}'
+  echo "sum = ${sum}"
 }
 
 def multiply(x,y){
-  echo "multiply = ${x} * ${y}"
+  def multiply = x*y
+  echo "multiply = ${multiply}"
 }
