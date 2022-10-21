@@ -1,3 +1,3 @@
-def call(name){
-  echo "hello ${name}, how are you?, welcome in dev branch"
+def call(name, age){
+  echo "hello ${name}, ${age} how are you?, welcome in dev branch"
 }
