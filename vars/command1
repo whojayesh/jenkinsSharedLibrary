@@ -1,5 +1,10 @@
 def call(Closure closure){
-  timestamps{
-    closure()
+  node('slave1'){
+      timestamps{
+        closure()
+      }
+      git 'https://github.com/whojayesh/jenkinsSharedLibrary.git'
+      echo '---------'
   }
+  
 }
