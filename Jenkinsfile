@@ -9,6 +9,7 @@ pipeline{
             steps{
                 timestamps{
                      git url: 'https://github.com/whojayesh/jenkinsSharedLibrary', branch: 'main' 
+                     echo '-----------\n---------'
                 }
             }
             post{
