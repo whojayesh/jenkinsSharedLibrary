@@ -1,10 +1,14 @@
 pipeline{
     agent any
+    triggers {
+        pollSCM('* * * * *')
+        githubPush()
+    }
     stages{
         stage('sdlc'){
             steps{
                 timestamps{
-                     echo 'just after catchError' 
+                     git url: 'https://github.com/whojayesh/jenkinsSharedLibrary', branch: 'main' 
                 }
             }
             post{
